@@ -1,0 +1,913 @@
+{
+  "passed": 181,
+  "total": 181,
+  "failed": [],
+  "limits": "Dosya/aritmetik kontrolüdür; gerçek cihaz veya emniyet doğrulaması değildir.",
+  "checks": [
+    {
+      "check": "question:L1-Q1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L1-Q2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L1-Q3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L1-Q4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L1-Q5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L1-Q6",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L1-Q7",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L1-Q8",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L2-A1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L2-A2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L2-A3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L2-B1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L2-B2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L2-B3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L2-B4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L2-B5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L2-B6",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L2-P1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L3-Q1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L3-Q2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L3-T1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L3-T2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L3-T3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L3-T4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L3-T5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L4-A",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L4-B1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L4-B2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L5-Q1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L5-Q2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L5-Q3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L5-Q4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L5-Q5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L1-E1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L1-E2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L1-E3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L1-E4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L2-E1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L2-E2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L2-E3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L2-E4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L3-E1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L3-E2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L3-E3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L3-E4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L4-E1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L4-E2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L4-E3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L4-E4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L5-E1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L5-E2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L5-E3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L5-E4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "risk_count_and_profiles",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R-01:score",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R-01:s3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R-01:references",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R-01:reasoning",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R-01:management",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R-02:score",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R-02:s3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R-02:references",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R-02:reasoning",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R-02:management",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R-03:score",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R-03:s3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R-03:references",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R-03:reasoning",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R-03:management",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R-04:score",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R-04:s3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R-04:references",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R-04:reasoning",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R-04:management",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "five_gates",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:README.md:docs/00-makine-profili.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:README.md:docs/lab1-safety-architecture.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:README.md:docs/lab2-zone-conduit.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:README.md:docs/lab3-risk-register.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:README.md:docs/lab4-secure-remote-access.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:README.md:docs/lab5-vulnerability-decision.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:README.md:docs/06-swot-dogrulama.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:README.md:docs/07-teslim-kontrolu.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:README.md:pdf/Arminoks_Sut_Otomati_LAB1-5_Rapor.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:README.md:data/risk_register.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:README.md:data/risk_register.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:README.md:GITHUB-YUKLEME.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/lab1-safety-architecture.md:../diagrams/lab1-mimari.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/lab4-secure-remote-access.md:../diagrams/lab4-erisim.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/lab5-vulnerability-decision.md:../diagrams/lab5-karar.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/lab2-zone-conduit.md:../diagrams/lab2-zonlar.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/lab3-risk-register.md:../diagrams/lab3-matris.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab1-safety-architecture.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab1-safety-architecture.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab1-safety-architecture.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab1-safety-architecture.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab1-safety-architecture.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab1-safety-architecture.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab1-safety-architecture.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab1-safety-architecture.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab2-zone-conduit.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab2-zone-conduit.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab2-zone-conduit.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab2-zone-conduit.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab2-zone-conduit.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab2-zone-conduit.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab2-zone-conduit.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab2-zone-conduit.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab2-zone-conduit.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab2-zone-conduit.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab3-risk-register.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab3-risk-register.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab3-risk-register.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab3-risk-register.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab3-risk-register.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab3-risk-register.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab3-risk-register.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab4-secure-remote-access.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab4-secure-remote-access.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab4-secure-remote-access.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab5-vulnerability-decision.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab5-vulnerability-decision.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab5-vulnerability-decision.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab5-vulnerability-decision.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab5-vulnerability-decision.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab1-safety-architecture.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab1-safety-architecture.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab1-safety-architecture.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab1-safety-architecture.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab2-zone-conduit.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab2-zone-conduit.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab2-zone-conduit.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab2-zone-conduit.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab3-risk-register.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab3-risk-register.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab3-risk-register.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab3-risk-register.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab4-secure-remote-access.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab4-secure-remote-access.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab4-secure-remote-access.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab4-secure-remote-access.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab5-vulnerability-decision.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab5-vulnerability-decision.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab5-vulnerability-decision.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab5-vulnerability-decision.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source_hash:docs/00-makine-profili.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source_hash:docs/06-swot-dogrulama.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source_hash:docs/07-teslim-kontrolu.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source_hash:docs/lab1-safety-architecture.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source_hash:docs/lab2-zone-conduit.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source_hash:docs/lab3-risk-register.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source_hash:docs/lab4-secure-remote-access.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source_hash:docs/lab5-vulnerability-decision.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pdf_count",
+      "passed": true,
+      "detail": "9"
+    },
+    {
+      "check": "pdf_text:00_Makine_Profili.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pdf_bounds:00_Makine_Profili.pdf",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "pdf_glyphs:00_Makine_Profili.pdf",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "pdf_text:06_SWOT_Dogrulama.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pdf_bounds:06_SWOT_Dogrulama.pdf",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "pdf_glyphs:06_SWOT_Dogrulama.pdf",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "pdf_text:07_Teslim_Kontrolu.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pdf_bounds:07_Teslim_Kontrolu.pdf",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "pdf_glyphs:07_Teslim_Kontrolu.pdf",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "pdf_text:Arminoks_Sut_Otomati_LAB1-5_Rapor.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pdf_bounds:Arminoks_Sut_Otomati_LAB1-5_Rapor.pdf",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "pdf_glyphs:Arminoks_Sut_Otomati_LAB1-5_Rapor.pdf",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "pdf_text:LAB1_Safety_Architecture.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pdf_bounds:LAB1_Safety_Architecture.pdf",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "pdf_glyphs:LAB1_Safety_Architecture.pdf",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "pdf_text:LAB2_Zone_Conduit.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pdf_bounds:LAB2_Zone_Conduit.pdf",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "pdf_glyphs:LAB2_Zone_Conduit.pdf",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "pdf_text:LAB3_Risk_Register.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pdf_bounds:LAB3_Risk_Register.pdf",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "pdf_glyphs:LAB3_Risk_Register.pdf",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "pdf_text:LAB4_Secure_Remote_Access.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pdf_bounds:LAB4_Secure_Remote_Access.pdf",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "pdf_glyphs:LAB4_Secure_Remote_Access.pdf",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "pdf_text:LAB5_Vulnerability_Decision.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pdf_bounds:LAB5_Vulnerability_Decision.pdf",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "pdf_glyphs:LAB5_Vulnerability_Decision.pdf",
+      "passed": true,
+      "detail": "[]"
+    }
+  ]
+}

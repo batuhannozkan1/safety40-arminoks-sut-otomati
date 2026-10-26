@@ -1,0 +1,139 @@
+{
+  "analysis_version": "1.0",
+  "date": "2026-10-26",
+  "exposure_definition": "Yolun dışarıya açıklığı; insan maruziyeti değil",
+  "risks": [
+    {
+      "id": "R-01",
+      "profile": "Fırsatçı dış",
+      "gates": [
+        "G01",
+        "G05"
+      ],
+      "safety_functions": [
+        "SF-01",
+        "SF-03"
+      ],
+      "conduits": [
+        "C01",
+        "C02",
+        "C03"
+      ],
+      "L": 3,
+      "S": 3,
+      "E": 3,
+      "score": 27,
+      "s3": true,
+      "priority": 1,
+      "target_date": "25.11.2026",
+      "target_score": {
+        "L": 1,
+        "S": 3,
+        "E": 2,
+        "score": 6,
+        "status": "hedef; uygulanmadı"
+      },
+      "scenario": "Fırsatçı dış saldırgan, **G01** uzak servis yolundan (V05/V06) bakım istasyonuna ve **G05** normal kontrol programlama yoluna erişir; V08'deki kapak/yeniden başlama mantığını değiştirir. **SF-01/SF-03** bozulur; V02'de bakım yapan kişi erişirken karıştırıcı beklenmedik çalışır ve el/kol ağır yaralanabilir. Bağ: Z0→Z2→Z3→Z4; C01/C02/C03; A02/A03/A07/A08/U03.",
+      "justifications": "L3: Başlangıç varsayımında değiştirilmemiş varsayılan kimlik bilgisi ve sınırsız yazma vardır. S3: Erişilebilir hareketli parçaya yakalanma ağır/kalıcı yaralanmayla sonuçlanabilir. E3: G01 eğitimde sürekli açık dış bağlantıdır. Fiziksel erişimin bakım sırasında gerçekleşmesi ayrıca V02'dir; E puanının tanımı değiştirilmez.",
+      "status": "Taslak; saha doğrulaması bekliyor",
+      "owner_accountable": "İşletmeci (önerilen rol)",
+      "evidence": "EP04 / LAB1 / LAB2 / docs/06-swot-dogrulama.md"
+    },
+    {
+      "id": "R-02",
+      "profile": "Meraklı içeriden",
+      "gates": [
+        "G02"
+      ],
+      "safety_functions": [
+        "SF-02"
+      ],
+      "conduits": [],
+      "L": 2,
+      "S": 3,
+      "E": 1,
+      "score": 6,
+      "s3": true,
+      "priority": 2,
+      "target_date": "24.01.2027",
+      "target_score": {
+        "L": 1,
+        "S": 3,
+        "E": 1,
+        "score": 3,
+        "status": "hedef; uygulanmadı"
+      },
+      "scenario": "Meraklı içeriden kişi, **G02** yerel paylaşılan servis hesabıyla sıcaklık veya satış engelleme koşulunu değiştirir (V04/V07). **SF-02** etkisizleşir; uzunluğu ve koşulları belirsiz uygunsuz muhafaza sonrasında ürün satılırsa tüketiciye ciddi biyolojik zarar oluşabilir. Bu zincir, gerçek bulaşma veya hastalık bulgusu değildir. Bağ: Z4; A01/A04/U02/F01.",
+      "justifications": "L2: Paylaşılan fakat bilinmesi gereken servis kimlik bilgisi kabul edilir. S3: Koşullu en kötü fiziksel sonuç ciddi hastalıktır; tek sıcaklık sapmasının hastalık yaptığı varsayılmaz. E1: Bu senaryonun giriş yolu yalnız makine başındaki ekrandır. Uzaktan panel erişimi varsa yeni yol ve puan gerekir.",
+      "status": "Taslak; saha doğrulaması bekliyor",
+      "owner_accountable": "İşletmeci (önerilen rol)",
+      "evidence": "EP04 / LAB1 / LAB2 / docs/06-swot-dogrulama.md"
+    },
+    {
+      "id": "R-03",
+      "profile": "Tedarik zinciri",
+      "gates": [
+        "G03",
+        "G04"
+      ],
+      "safety_functions": [
+        "SF-04"
+      ],
+      "conduits": [
+        "C04"
+      ],
+      "L": 1,
+      "S": 3,
+      "E": 1,
+      "score": 3,
+      "s3": true,
+      "priority": 3,
+      "target_date": "24.01.2027",
+      "target_score": {
+        "L": 1,
+        "S": 3,
+        "E": 1,
+        "score": 3,
+        "status": "hedef; uygulanmadı"
+      },
+      "scenario": "Tedarik zinciri saldırganı, **G04** servis paketini değiştirir; paket **G03** USB aktarımıyla yüklenebiliyor kabul edilir (V07/V08). Temizlik ve satışın dışlama/durulama koşulu bozulur, **SF-04** atlanır; V03'teki kimyasal veya sıcak temizleme akışının ürün/erişilebilir dolum yoluna verilmesi ciddi zehirlenme veya yanık doğurabilir. Bağ: Z0→Z3/Z4; C04; A05/A06/W02/W03/F03/F04.",
+      "justifications": "L1: Servis paketini hazırlama/tedarik zincirine yerleştirme ve yerel yükleme zinciri gerekir; USB varlığı tek başına kolay istismar değildir. S3: V03'te kimyasal/sıcak akışın insana ulaşması ciddi fiziksel sonuçtur. E1: Makineye son geçiş fiziksel USB'dir; tedarikçinin internet bağlantısı otomatik E3 yapılmaz.",
+      "status": "Taslak; saha doğrulaması bekliyor",
+      "owner_accountable": "İşletmeci (önerilen rol)",
+      "evidence": "EP04 / LAB1 / LAB2 / docs/06-swot-dogrulama.md"
+    },
+    {
+      "id": "R-04",
+      "profile": "Hedefli",
+      "gates": [
+        "G04",
+        "G05"
+      ],
+      "safety_functions": [
+        "SF-03"
+      ],
+      "conduits": [
+        "C03"
+      ],
+      "L": 1,
+      "S": 3,
+      "E": 1,
+      "score": 3,
+      "s3": true,
+      "priority": 4,
+      "target_date": "24.01.2027",
+      "target_score": {
+        "L": 1,
+        "S": 3,
+        "E": 1,
+        "score": 3,
+        "status": "hedef; uygulanmadı"
+      },
+      "scenario": "Hedefli saldırgan **G04** bakım aracı/proje dosyasını değiştirir; yerel serviste **G05** üzerinden yüklenen proje SF-03 yeniden başlatma engelini kaldırır (V02/V08). Enerji geri geldiğinde bakım bölgesindeki karıştırıcı çalışabilir; erişen kişi ağır yaralanabilir. Bağ: Z3→Z4; C03; A07/W03/F03/A02/A03.",
+      "justifications": "L1: Hedefe uygun proje bilgisi, dosya değişikliği ve yerel yetkili aktarımın birlikte gerçekleşmesi gerekir. S3: SF-03 bozulduğunda erişilebilir hareket R-01 ile aynı ağır yaralanmayı doğurabilir. E1: Değerlendirilen son erişim yerel bakım bağlantısıdır; R-01'in internet yolu bu senaryoya taşınmaz.",
+      "status": "Taslak; saha doğrulaması bekliyor",
+      "owner_accountable": "İşletmeci (önerilen rol)",
+      "evidence": "EP04 / LAB1 / LAB2 / docs/06-swot-dogrulama.md"
+    }
+  ]
+}

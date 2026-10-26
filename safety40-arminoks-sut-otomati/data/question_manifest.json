@@ -1,0 +1,284 @@
+{
+  "mandatory_and_course_discussion": [
+    "L1-Q1",
+    "L1-Q2",
+    "L1-Q3",
+    "L1-Q4",
+    "L1-Q5",
+    "L1-Q6",
+    "L1-Q7",
+    "L1-Q8",
+    "L2-A1",
+    "L2-A2",
+    "L2-A3",
+    "L2-B1",
+    "L2-B2",
+    "L2-B3",
+    "L2-B4",
+    "L2-B5",
+    "L2-B6",
+    "L2-P1",
+    "L3-Q1",
+    "L3-Q2",
+    "L3-T1",
+    "L3-T2",
+    "L3-T3",
+    "L3-T4",
+    "L3-T5",
+    "L4-A",
+    "L4-B1",
+    "L4-B2",
+    "L5-Q1",
+    "L5-Q2",
+    "L5-Q3",
+    "L5-Q4",
+    "L5-Q5"
+  ],
+  "extra_questions": [
+    "L1-E1",
+    "L1-E2",
+    "L1-E3",
+    "L1-E4",
+    "L2-E1",
+    "L2-E2",
+    "L2-E3",
+    "L2-E4",
+    "L3-E1",
+    "L3-E2",
+    "L3-E3",
+    "L3-E4",
+    "L4-E1",
+    "L4-E2",
+    "L4-E3",
+    "L4-E4",
+    "L5-E1",
+    "L5-E2",
+    "L5-E3",
+    "L5-E4"
+  ],
+  "questions": {
+    "L1-Q1": {
+      "file": "docs/lab1-safety-architecture.md",
+      "question": "Bu makinede tehlike nedir? İnsan neyden zarar görür?"
+    },
+    "L1-Q2": {
+      "file": "docs/lab1-safety-architecture.md",
+      "question": "Safety function (emniyet fonksiyonu) hangisidir?"
+    },
+    "L1-Q3": {
+      "file": "docs/lab1-safety-architecture.md",
+      "question": "Safety-related control system nerede? Şemada işaretleyin."
+    },
+    "L1-Q4": {
+      "file": "docs/lab1-safety-architecture.md",
+      "question": "Normal PLC ile Safety PLC farkı nedir?"
+    },
+    "L1-Q5": {
+      "file": "docs/lab1-safety-architecture.md",
+      "question": "PLr / SIL neden var? Bu fonksiyon için neden önemli?"
+    },
+    "L1-Q6": {
+      "file": "docs/lab1-safety-architecture.md",
+      "question": "Safe state (güvenli durum) nedir?"
+    },
+    "L1-Q7": {
+      "file": "docs/lab1-safety-architecture.md",
+      "question": "Safety function hangi dijital bağımlılıklara sahip?"
+    },
+    "L1-Q8": {
+      "file": "docs/lab1-safety-architecture.md",
+      "question": "Siber müdahale hangi noktadan bu fonksiyonu bozar?"
+    },
+    "L1-E1": {
+      "file": "docs/lab1-safety-architecture.md",
+      "question": "Her şeyi kapatmak neden her zaman güvenli değildir?"
+    },
+    "L1-E2": {
+      "file": "docs/lab1-safety-architecture.md",
+      "question": "Panel normal sıcaklık gösteriyorsa satış yapılabilir mi?"
+    },
+    "L1-E3": {
+      "file": "docs/lab1-safety-architecture.md",
+      "question": "Reset neden başlatma olmamalı?"
+    },
+    "L1-E4": {
+      "file": "docs/lab1-safety-architecture.md",
+      "question": "Emniyet bağımsızlığını nasıl sınarız?"
+    },
+    "L4-B1": {
+      "file": "docs/lab4-secure-remote-access.md",
+      "question": "Saldırgan bütün önlemlere rağmen içeri girerse emniyet fonksiyonu etkilenir mi? Neden?"
+    },
+    "L4-B2": {
+      "file": "docs/lab4-secure-remote-access.md",
+      "question": "Emniyetin kontrol sisteminden ve uzak bakım yolundan bağımsızlığı için gereksinimi yazın."
+    },
+    "L4-E1": {
+      "file": "docs/lab4-secure-remote-access.md",
+      "question": "Bakımcı ekranı görebiliyorsa program da yükleyebilir mi?"
+    },
+    "L4-E2": {
+      "file": "docs/lab4-secure-remote-access.md",
+      "question": "Bağlantı kesilince ne olur?"
+    },
+    "L4-E3": {
+      "file": "docs/lab4-secure-remote-access.md",
+      "question": "Ayrı Safety PLC varsa tamamen güvende miyiz?"
+    },
+    "L4-E4": {
+      "file": "docs/lab4-secure-remote-access.md",
+      "question": "Öncelikli risk zinciri nerede kırılır?"
+    },
+    "L5-Q1": {
+      "file": "docs/lab5-vulnerability-decision.md",
+      "question": "Bu CVE sizi gerçekten etkiliyor mu? Üç şartı kontrol edin."
+    },
+    "L5-Q2": {
+      "file": "docs/lab5-vulnerability-decision.md",
+      "question": "Üretimi hemen durdurur musunuz? Neden / neden değil?"
+    },
+    "L5-Q3": {
+      "file": "docs/lab5-vulnerability-decision.md",
+      "question": "Yamayı doğrudan mı uygularsınız, önce test mi? Nerede test?"
+    },
+    "L5-Q4": {
+      "file": "docs/lab5-vulnerability-decision.md",
+      "question": "Yama safety validation'ı etkiliyor mu? Nasıl anlarsınız?"
+    },
+    "L5-Q5": {
+      "file": "docs/lab5-vulnerability-decision.md",
+      "question": "Yama mümkün değilse telafi edici önlem ne olur?"
+    },
+    "L5-E1": {
+      "file": "docs/lab5-vulnerability-decision.md",
+      "question": "Gerçek CVE bulmadan LAB5 tamamlanabilir mi?"
+    },
+    "L5-E2": {
+      "file": "docs/lab5-vulnerability-decision.md",
+      "question": "Hash doğruysa paket güvenilir midir?"
+    },
+    "L5-E3": {
+      "file": "docs/lab5-vulnerability-decision.md",
+      "question": "Geri dönüş desteklenmiyorsa ne yaparız?"
+    },
+    "L5-E4": {
+      "file": "docs/lab5-vulnerability-decision.md",
+      "question": "Kapanış için hangi somut sonuç gerekir?"
+    },
+    "L2-A1": {
+      "file": "docs/lab2-zone-conduit.md",
+      "question": "Hangi varlıklar aynı bölgede? Bölgeleri adlandırıp gruplandırın."
+    },
+    "L2-A2": {
+      "file": "docs/lab2-zone-conduit.md",
+      "question": "Safety PLC'yi hangi bölgeye koydunuz, neden?"
+    },
+    "L2-A3": {
+      "file": "docs/lab2-zone-conduit.md",
+      "question": "Conduit'ler nerede? Her geçişte ne kontrol edilecek?"
+    },
+    "L2-P1": {
+      "file": "docs/lab2-zone-conduit.md",
+      "question": "PaketPro varyantı: Açık uzak bakım modülü hangi bölgeye düşüyor; orada kalabilir mi?"
+    },
+    "L2-E1": {
+      "file": "docs/lab2-zone-conduit.md",
+      "question": "SMS modülü internet saldırı yolu mudur?"
+    },
+    "L2-E2": {
+      "file": "docs/lab2-zone-conduit.md",
+      "question": "Satış verisi alan USB neden önemlidir?"
+    },
+    "L2-E3": {
+      "file": "docs/lab2-zone-conduit.md",
+      "question": "Aynı VLAN yerine farklı VLAN yeterli koruma mıdır?"
+    },
+    "L2-E4": {
+      "file": "docs/lab2-zone-conduit.md",
+      "question": "Ödeme başarısı koruma koşullarını aşabilir mi?"
+    },
+    "L3-Q1": {
+      "file": "docs/lab3-risk-register.md",
+      "question": "En yüksek öncelikli senaryonuz hangisi? Neden?"
+    },
+    "L3-Q2": {
+      "file": "docs/lab3-risk-register.md",
+      "question": "S=3 olup skoru düşük kalan senaryo var mı? Nasıl görünür kılacaksınız?"
+    },
+    "L3-T1": {
+      "file": "docs/lab3-risk-register.md",
+      "question": "Aynı kapıyı iki farklı profil kullanırsa skor değişir mi?"
+    },
+    "L3-T2": {
+      "file": "docs/lab3-risk-register.md",
+      "question": "Skoru 27 ama S1 olan senaryo mu, skoru 3 olan S3 mü önce?"
+    },
+    "L3-T3": {
+      "file": "docs/lab3-risk-register.md",
+      "question": "Emniyete dokunmayan siber senaryo Register'a girmeli mi?"
+    },
+    "L3-T4": {
+      "file": "docs/lab3-risk-register.md",
+      "question": "Tedarikçinin güvenli beyanına ne kadar güvenirsiniz; hangi kanıt gerekir?"
+    },
+    "L3-T5": {
+      "file": "docs/lab3-risk-register.md",
+      "question": "Register ne zaman tekrar puanlanmalı?"
+    },
+    "L3-E1": {
+      "file": "docs/lab3-risk-register.md",
+      "question": "İnternet bağlantısı hiç yoksa sonuç ne olur?"
+    },
+    "L3-E2": {
+      "file": "docs/lab3-risk-register.md",
+      "question": "Temizlik yalnız soğuk suyla yapılıyorsa?"
+    },
+    "L3-E3": {
+      "file": "docs/lab3-risk-register.md",
+      "question": "Önlem sonrası skor düşmüyorsa önlem işe yaramaz mı?"
+    },
+    "L3-E4": {
+      "file": "docs/lab3-risk-register.md",
+      "question": "En çok tartışılabilecek puan hangisi?"
+    },
+    "L2-B1": {
+      "file": "docs/lab2-zone-conduit.md",
+      "question": "Aracı: seçim ve gerekçe",
+      "format": "table"
+    },
+    "L2-B2": {
+      "file": "docs/lab2-zone-conduit.md",
+      "question": "Tünel: seçim ve gerekçe",
+      "format": "table"
+    },
+    "L2-B3": {
+      "file": "docs/lab2-zone-conduit.md",
+      "question": "Kimlik: seçim ve gerekçe",
+      "format": "table"
+    },
+    "L2-B4": {
+      "file": "docs/lab2-zone-conduit.md",
+      "question": "Hesap: seçim ve gerekçe",
+      "format": "table"
+    },
+    "L2-B5": {
+      "file": "docs/lab2-zone-conduit.md",
+      "question": "Kayıt: seçim ve gerekçe",
+      "format": "table"
+    },
+    "L2-B6": {
+      "file": "docs/lab2-zone-conduit.md",
+      "question": "Zamanlama: seçim ve gerekçe",
+      "format": "table"
+    },
+    "L4-A": {
+      "file": "docs/lab4-secure-remote-access.md",
+      "question": "Görev A: Başlangıç ve hedef mimari; beş ilke"
+    }
+  },
+  "notes": [
+    "L2-P1 PaketPro varyantı eklenmiştir",
+    "L3-T1–T5 LAB3 ders tartışmalarıdır",
+    "LAB6–7 kapsam dışıdır"
+  ]
+}
