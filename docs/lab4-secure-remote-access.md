@@ -1,10 +1,10 @@
-# LAB 4 | Secure Remote Access
+# LAB 4 - Secure Remote Access
 
 **Çıktı:** Secure Architecture · **EP 02 / EP 06** · T01/T02 s.5
 
 ## L4-A | Görev A: Mevcut → hedef
 
-Buradaki mevcut sözcüğü **V05/V06/V08 eğitim başlangıcını** anlatır. Arminoks'ta internete açık servis veya gerçek parola tespit edilmemiştir. K01'in SMS bildirimi uzaktan programlama kanıtı değildir.
+Başlangıç V05/V06/V08 ders senaryosudur. Üreticinin gerçek kurulumunda internete açık servis veya varsayılan parola bulunduğu söylenmez.
 
 ### Başlangıç modeli
 
@@ -34,15 +34,15 @@ Başlangıç modelinde evet: V08'de normal kontrol yazılımındaki kapak/yenide
 
 | ID | Üründen bağımsız gereksinim | Nasıl doğrulanır? |
 |---|---|---|
-| H01 | Kapak açık veya koruma durumu geçersizken normal kontrolör/uzak komut karıştırıcıda tehlikeli hareket oluşturamamalı; gerekli duruş sağlanmadan erişim olmamalı | D01; en kötü komut ve hata durumunda duruş/erişim ölçümü |
-| H02 | Geçersiz sıcaklık veya ürün uygunluğu belirsizken panel/ödeme/uzak komut ürün satışını açamamalı | D02; hata ve geçmiş sapma denemeleri |
-| H03 | Enerji, haberleşme veya reset dönüşü kendiliğinden tehlikeli hareket başlatmamalı | D03; ayrı yerel başlatma kontrolü |
-| H04 | Satış ile yıkama birbirini dışlamalı; doğrulanmış durulama/temizlik izni olmadan ürün yoluna geçilememeli | D04; durum geçiş ve çıkış testleri |
-| H05 | Koruma ayarları ve güvenilir yazılım yalnız yetkili yerel süreçle değişebilmeli; paket kaynağı, bütünlük, önceki sürüm ve onay kaydı korunmalı | D05; yetkisiz/bozuk paket reddi ve sürüm izi |
-| H06 | Uzak erişim yerel onaylı süreyle ve kişisel kimlikle sınırlanmalı; koruma programlama yoluna yazma vermemeli | D06; hesap/rota/yetki testleri |
-| H07 | Ağ/servis kaybı güvenli davranışı bozmamalı; dolum kilidi ve koruma sürerken güvenli soğutma ihtiyacı ayrıca karşılanmalı | D07; bağlantı kaybı testi |
+| H01 | Kapak açık veya koruma durumu geçersizken normal kontrolör/uzak komut karıştırıcıda tehlikeli hareket oluşturamamalı; gerekli duruş sağlanmadan erişim olmamalı | KT01; en kötü komut ve hata durumunda duruş/erişim ölçümü |
+| H02 | Geçersiz sıcaklık veya ürün uygunluğu belirsizken panel/ödeme/uzak komut ürün satışını açamamalı | KT02; hata ve geçmiş sapma denemeleri |
+| H03 | Enerji, haberleşme veya reset dönüşü kendiliğinden tehlikeli hareket başlatmamalı | KT03; ayrı yerel başlatma kontrolü |
+| H04 | Satış ile yıkama birbirini dışlamalı; yıkama tamamlandığı doğrulanmadan satışa geçilememeli | KT04; durum geçiş ve satış izni testi |
+| H05 | Koruma ayarları ve güvenilir yazılım yalnız yetkili yerel süreçle değişebilmeli; paket kaynağı, bütünlük, önceki sürüm ve onay kaydı korunmalı | KT05; yetkisiz/bozuk paket reddi ve sürüm izi |
+| H06 | Uzak erişim yerel onaylı süreyle ve kişisel kimlikle sınırlanmalı; koruma programlama yoluna yazma vermemeli | KT06; hesap/rota/yetki testleri |
+| H07 | Ağ/servis kaybı güvenli davranışı bozmamalı; dolum kilidi ve koruma sürerken güvenli soğutma ihtiyacı ayrıca karşılanmalı | KT07; bağlantı kaybı testi |
 
-T02'deki ışık perdesi gereksinimi, süt otomatının doğrulanmamış ışık perdesi varmış gibi kopyalanmamıştır; karşılığı H01 ve H03'tür. Gereksinimler bir ürün/PLC markası dayatmaz. H05 bakım değişikliklerini bütünüyle yasaklamak yerine izlenebilir, yerel ve yetkili sürece bağlar.
+PaketPro'nun ışık perdesi sorusu H01/H03 erişim ve yeniden başlama korumasına uyarlanmıştır. Gereksinimler bir marka seçmez; hangi ürünle sağlanacağı tasarım kararıdır.
 
 ## Süreli bakım prosedürü
 
@@ -69,4 +69,4 @@ Hayır. Ortak bakım hesabı veya programlama yolu iki sistemi de değiştirebil
 
 ### L4-E4 | Öncelikli risk zinciri nerede kırılır?
 
-R-01 için C01'de süreli kimlikli giriş, C03'te sınırlı yazma ve son halkada H01/H03 bağımsız koruma gerekir. İlk katman giriş ihtimalini azaltır; son katman giriş olsa da fiziksel sonucu engellemeyi hedefler. Sonucun kanıtı diyagram değil, D01/D03/D06 testleridir.
+R-01 için C01'de süreli kimlikli giriş, C03'te sınırlı yazma ve son halkada H01/H03 bağımsız koruma gerekir. İlk katman giriş ihtimalini azaltır; son katman giriş olsa da fiziksel sonucu engellemeyi hedefler. Sonucun kanıtı diyagram değil, KT01/KT03/KT06 testleridir.

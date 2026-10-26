@@ -1,9 +1,39 @@
 {
-  "passed": 181,
-  "total": 181,
+  "passed": 156,
+  "total": 156,
   "failed": [],
   "limits": "Dosya/aritmetik kontrolüdür; gerçek cihaz veya emniyet doğrulaması değildir.",
   "checks": [
+    {
+      "check": "expected_question_set",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_upload_guide",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_windows_metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "generated_data:data/question_manifest.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "generated_data:data/risk_register.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "generated_data:data/risk_register.csv",
+      "passed": true,
+      "detail": ""
+    },
     {
       "check": "question:L1-Q1",
       "passed": true,
@@ -285,7 +315,17 @@
       "detail": ""
     },
     {
+      "check": "R-01:target_score",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "R-01:references",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R-01:scenario_links",
       "passed": true,
       "detail": ""
     },
@@ -310,7 +350,17 @@
       "detail": ""
     },
     {
+      "check": "R-02:target_score",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "R-02:references",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R-02:scenario_links",
       "passed": true,
       "detail": ""
     },
@@ -335,7 +385,17 @@
       "detail": ""
     },
     {
+      "check": "R-03:target_score",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "R-03:references",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R-03:scenario_links",
       "passed": true,
       "detail": ""
     },
@@ -360,7 +420,17 @@
       "detail": ""
     },
     {
+      "check": "R-04:target_score",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "R-04:references",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R-04:scenario_links",
       "passed": true,
       "detail": ""
     },
@@ -435,27 +505,17 @@
       "detail": ""
     },
     {
-      "check": "link:README.md:GITHUB-YUKLEME.md",
+      "check": "link:README.md:data/verification.json",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "link:docs/lab1-safety-architecture.md:../diagrams/lab1-mimari.png",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/lab4-secure-remote-access.md:../diagrams/lab4-erisim.png",
+      "check": "link:README.md:docs/00-makine-profili.md",
       "passed": true,
       "detail": ""
     },
     {
       "check": "link:docs/lab5-vulnerability-decision.md:../diagrams/lab5-karar.png",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/lab2-zone-conduit.md:../diagrams/lab2-zonlar.png",
       "passed": true,
       "detail": ""
     },
@@ -470,112 +530,7 @@
       "detail": ""
     },
     {
-      "check": "link:docs/07-teslim-kontrolu.md:lab1-safety-architecture.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab1-safety-architecture.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab1-safety-architecture.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab1-safety-architecture.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab1-safety-architecture.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab1-safety-architecture.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab1-safety-architecture.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
       "check": "link:docs/07-teslim-kontrolu.md:lab2-zone-conduit.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab2-zone-conduit.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab2-zone-conduit.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab2-zone-conduit.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab2-zone-conduit.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab2-zone-conduit.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab2-zone-conduit.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab2-zone-conduit.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab2-zone-conduit.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab2-zone-conduit.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab3-risk-register.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab3-risk-register.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab3-risk-register.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab3-risk-register.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab3-risk-register.md",
       "passed": true,
       "detail": ""
     },
@@ -595,137 +550,22 @@
       "detail": ""
     },
     {
-      "check": "link:docs/07-teslim-kontrolu.md:lab4-secure-remote-access.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab4-secure-remote-access.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
       "check": "link:docs/07-teslim-kontrolu.md:lab5-vulnerability-decision.md",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "link:docs/07-teslim-kontrolu.md:lab5-vulnerability-decision.md",
+      "check": "link:docs/lab2-zone-conduit.md:../diagrams/lab2-zonlar.png",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "link:docs/07-teslim-kontrolu.md:lab5-vulnerability-decision.md",
+      "check": "link:docs/lab1-safety-architecture.md:../diagrams/lab1-mimari.png",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "link:docs/07-teslim-kontrolu.md:lab5-vulnerability-decision.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab5-vulnerability-decision.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab1-safety-architecture.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab1-safety-architecture.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab1-safety-architecture.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab1-safety-architecture.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab2-zone-conduit.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab2-zone-conduit.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab2-zone-conduit.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab2-zone-conduit.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab3-risk-register.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab3-risk-register.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab3-risk-register.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab3-risk-register.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab4-secure-remote-access.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab4-secure-remote-access.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab4-secure-remote-access.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab4-secure-remote-access.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab5-vulnerability-decision.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab5-vulnerability-decision.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab5-vulnerability-decision.md",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/07-teslim-kontrolu.md:lab5-vulnerability-decision.md",
+      "check": "link:docs/lab4-secure-remote-access.md:../diagrams/lab4-erisim.png",
       "passed": true,
       "detail": ""
     },
@@ -825,6 +665,16 @@
       "detail": ""
     },
     {
+      "check": "pdf_all_questions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pdf_bookmarks",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "pdf_bounds:Arminoks_Sut_Otomati_LAB1-5_Rapor.pdf",
       "passed": true,
       "detail": "[]"
@@ -836,6 +686,11 @@
     },
     {
       "check": "pdf_text:LAB1_Safety_Architecture.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pdf_questions:LAB1_Safety_Architecture.pdf",
       "passed": true,
       "detail": ""
     },
@@ -855,6 +710,11 @@
       "detail": ""
     },
     {
+      "check": "pdf_questions:LAB2_Zone_Conduit.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "pdf_bounds:LAB2_Zone_Conduit.pdf",
       "passed": true,
       "detail": "[]"
@@ -866,6 +726,11 @@
     },
     {
       "check": "pdf_text:LAB3_Risk_Register.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pdf_questions:LAB3_Risk_Register.pdf",
       "passed": true,
       "detail": ""
     },
@@ -885,6 +750,11 @@
       "detail": ""
     },
     {
+      "check": "pdf_questions:LAB4_Secure_Remote_Access.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "pdf_bounds:LAB4_Secure_Remote_Access.pdf",
       "passed": true,
       "detail": "[]"
@@ -896,6 +766,11 @@
     },
     {
       "check": "pdf_text:LAB5_Vulnerability_Decision.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pdf_questions:LAB5_Vulnerability_Decision.pdf",
       "passed": true,
       "detail": ""
     },

@@ -105,6 +105,116 @@
       "file": "docs/lab1-safety-architecture.md",
       "question": "Emniyet bağımsızlığını nasıl sınarız?"
     },
+    "L2-A1": {
+      "file": "docs/lab2-zone-conduit.md",
+      "question": "Hangi varlıklar aynı bölgede? Bölgeleri adlandırıp gruplandırın."
+    },
+    "L2-A2": {
+      "file": "docs/lab2-zone-conduit.md",
+      "question": "Safety PLC'yi hangi bölgeye koydunuz, neden?"
+    },
+    "L2-A3": {
+      "file": "docs/lab2-zone-conduit.md",
+      "question": "Conduit'ler nerede? Her geçişte ne kontrol edilecek?"
+    },
+    "L2-P1": {
+      "file": "docs/lab2-zone-conduit.md",
+      "question": "PaketPro varyantı: Açık uzak bakım modülü hangi bölgeye düşüyor; orada kalabilir mi?"
+    },
+    "L2-E1": {
+      "file": "docs/lab2-zone-conduit.md",
+      "question": "SMS modülü internet saldırı yolu mudur?"
+    },
+    "L2-E2": {
+      "file": "docs/lab2-zone-conduit.md",
+      "question": "Satış verisi alan USB neden önemlidir?"
+    },
+    "L2-E3": {
+      "file": "docs/lab2-zone-conduit.md",
+      "question": "Aynı VLAN yerine farklı VLAN yeterli koruma mıdır?"
+    },
+    "L2-E4": {
+      "file": "docs/lab2-zone-conduit.md",
+      "question": "Ödeme başarısı koruma koşullarını aşabilir mi?"
+    },
+    "L2-B1": {
+      "file": "docs/lab2-zone-conduit.md",
+      "question": "Aracı: seçim ve gerekçe",
+      "format": "table"
+    },
+    "L2-B2": {
+      "file": "docs/lab2-zone-conduit.md",
+      "question": "Tünel: seçim ve gerekçe",
+      "format": "table"
+    },
+    "L2-B3": {
+      "file": "docs/lab2-zone-conduit.md",
+      "question": "Kimlik: seçim ve gerekçe",
+      "format": "table"
+    },
+    "L2-B4": {
+      "file": "docs/lab2-zone-conduit.md",
+      "question": "Hesap: seçim ve gerekçe",
+      "format": "table"
+    },
+    "L2-B5": {
+      "file": "docs/lab2-zone-conduit.md",
+      "question": "Kayıt: seçim ve gerekçe",
+      "format": "table"
+    },
+    "L2-B6": {
+      "file": "docs/lab2-zone-conduit.md",
+      "question": "Zamanlama: seçim ve gerekçe",
+      "format": "table"
+    },
+    "L3-Q1": {
+      "file": "docs/lab3-risk-register.md",
+      "question": "En yüksek öncelikli senaryonuz hangisi? Neden?"
+    },
+    "L3-Q2": {
+      "file": "docs/lab3-risk-register.md",
+      "question": "S=3 olup skoru düşük kalan senaryo var mı? Nasıl görünür kılacaksınız?"
+    },
+    "L3-T1": {
+      "file": "docs/lab3-risk-register.md",
+      "question": "Aynı kapıyı iki farklı profil kullanırsa skor değişir mi?"
+    },
+    "L3-T2": {
+      "file": "docs/lab3-risk-register.md",
+      "question": "Skoru 27 ama S1 olan senaryo mu, skoru 3 olan S3 mü önce?"
+    },
+    "L3-T3": {
+      "file": "docs/lab3-risk-register.md",
+      "question": "Emniyete dokunmayan siber senaryo Register'a girmeli mi?"
+    },
+    "L3-T4": {
+      "file": "docs/lab3-risk-register.md",
+      "question": "Tedarikçinin güvenli beyanına ne kadar güvenirsiniz; hangi kanıt gerekir?"
+    },
+    "L3-T5": {
+      "file": "docs/lab3-risk-register.md",
+      "question": "Register ne zaman tekrar puanlanmalı?"
+    },
+    "L3-E1": {
+      "file": "docs/lab3-risk-register.md",
+      "question": "İnternet bağlantısı hiç yoksa sonuç ne olur?"
+    },
+    "L3-E2": {
+      "file": "docs/lab3-risk-register.md",
+      "question": "Yıkama yöntemi bilinmiyorsa risk nasıl yazılmalı?"
+    },
+    "L3-E3": {
+      "file": "docs/lab3-risk-register.md",
+      "question": "Önlem sonrası skor düşmüyorsa önlem işe yaramaz mı?"
+    },
+    "L3-E4": {
+      "file": "docs/lab3-risk-register.md",
+      "question": "En çok tartışılabilecek puan hangisi?"
+    },
+    "L4-A": {
+      "file": "docs/lab4-secure-remote-access.md",
+      "question": "Görev A: Mevcut → hedef"
+    },
     "L4-B1": {
       "file": "docs/lab4-secure-remote-access.md",
       "question": "Saldırgan bütün önlemlere rağmen içeri girerse emniyet fonksiyonu etkilenir mi? Neden?"
@@ -164,121 +274,10 @@
     "L5-E4": {
       "file": "docs/lab5-vulnerability-decision.md",
       "question": "Kapanış için hangi somut sonuç gerekir?"
-    },
-    "L2-A1": {
-      "file": "docs/lab2-zone-conduit.md",
-      "question": "Hangi varlıklar aynı bölgede? Bölgeleri adlandırıp gruplandırın."
-    },
-    "L2-A2": {
-      "file": "docs/lab2-zone-conduit.md",
-      "question": "Safety PLC'yi hangi bölgeye koydunuz, neden?"
-    },
-    "L2-A3": {
-      "file": "docs/lab2-zone-conduit.md",
-      "question": "Conduit'ler nerede? Her geçişte ne kontrol edilecek?"
-    },
-    "L2-P1": {
-      "file": "docs/lab2-zone-conduit.md",
-      "question": "PaketPro varyantı: Açık uzak bakım modülü hangi bölgeye düşüyor; orada kalabilir mi?"
-    },
-    "L2-E1": {
-      "file": "docs/lab2-zone-conduit.md",
-      "question": "SMS modülü internet saldırı yolu mudur?"
-    },
-    "L2-E2": {
-      "file": "docs/lab2-zone-conduit.md",
-      "question": "Satış verisi alan USB neden önemlidir?"
-    },
-    "L2-E3": {
-      "file": "docs/lab2-zone-conduit.md",
-      "question": "Aynı VLAN yerine farklı VLAN yeterli koruma mıdır?"
-    },
-    "L2-E4": {
-      "file": "docs/lab2-zone-conduit.md",
-      "question": "Ödeme başarısı koruma koşullarını aşabilir mi?"
-    },
-    "L3-Q1": {
-      "file": "docs/lab3-risk-register.md",
-      "question": "En yüksek öncelikli senaryonuz hangisi? Neden?"
-    },
-    "L3-Q2": {
-      "file": "docs/lab3-risk-register.md",
-      "question": "S=3 olup skoru düşük kalan senaryo var mı? Nasıl görünür kılacaksınız?"
-    },
-    "L3-T1": {
-      "file": "docs/lab3-risk-register.md",
-      "question": "Aynı kapıyı iki farklı profil kullanırsa skor değişir mi?"
-    },
-    "L3-T2": {
-      "file": "docs/lab3-risk-register.md",
-      "question": "Skoru 27 ama S1 olan senaryo mu, skoru 3 olan S3 mü önce?"
-    },
-    "L3-T3": {
-      "file": "docs/lab3-risk-register.md",
-      "question": "Emniyete dokunmayan siber senaryo Register'a girmeli mi?"
-    },
-    "L3-T4": {
-      "file": "docs/lab3-risk-register.md",
-      "question": "Tedarikçinin güvenli beyanına ne kadar güvenirsiniz; hangi kanıt gerekir?"
-    },
-    "L3-T5": {
-      "file": "docs/lab3-risk-register.md",
-      "question": "Register ne zaman tekrar puanlanmalı?"
-    },
-    "L3-E1": {
-      "file": "docs/lab3-risk-register.md",
-      "question": "İnternet bağlantısı hiç yoksa sonuç ne olur?"
-    },
-    "L3-E2": {
-      "file": "docs/lab3-risk-register.md",
-      "question": "Temizlik yalnız soğuk suyla yapılıyorsa?"
-    },
-    "L3-E3": {
-      "file": "docs/lab3-risk-register.md",
-      "question": "Önlem sonrası skor düşmüyorsa önlem işe yaramaz mı?"
-    },
-    "L3-E4": {
-      "file": "docs/lab3-risk-register.md",
-      "question": "En çok tartışılabilecek puan hangisi?"
-    },
-    "L2-B1": {
-      "file": "docs/lab2-zone-conduit.md",
-      "question": "Aracı: seçim ve gerekçe",
-      "format": "table"
-    },
-    "L2-B2": {
-      "file": "docs/lab2-zone-conduit.md",
-      "question": "Tünel: seçim ve gerekçe",
-      "format": "table"
-    },
-    "L2-B3": {
-      "file": "docs/lab2-zone-conduit.md",
-      "question": "Kimlik: seçim ve gerekçe",
-      "format": "table"
-    },
-    "L2-B4": {
-      "file": "docs/lab2-zone-conduit.md",
-      "question": "Hesap: seçim ve gerekçe",
-      "format": "table"
-    },
-    "L2-B5": {
-      "file": "docs/lab2-zone-conduit.md",
-      "question": "Kayıt: seçim ve gerekçe",
-      "format": "table"
-    },
-    "L2-B6": {
-      "file": "docs/lab2-zone-conduit.md",
-      "question": "Zamanlama: seçim ve gerekçe",
-      "format": "table"
-    },
-    "L4-A": {
-      "file": "docs/lab4-secure-remote-access.md",
-      "question": "Görev A: Başlangıç ve hedef mimari; beş ilke"
     }
   },
   "notes": [
-    "L2-P1 PaketPro varyantı eklenmiştir",
-    "L3-T1–T5 LAB3 ders tartışmalarıdır",
-    "LAB6–7 kapsam dışıdır"
+    "L2-P1 uyarlama sorusu; L3-T1-T5 ders tartışmasıdır.",
+    "LAB6-7 kapsam dışıdır."
   ]
 }

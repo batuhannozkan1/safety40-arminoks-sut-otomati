@@ -1,8 +1,8 @@
-# LAB 2 | IEC 62443 Zone / Conduit
+# LAB 2 - IEC 62443 Zone / Conduit
 
 **Çıktı:** Envanter + Zone/Conduit Diagram · **EP 01 / EP 05** · T01/T02 s.3
 
-T01'in şişeleme hattı varlıkları süt otomatına işlevsel olarak uyarlanmıştır. Robot ve SCADA eklenmez. T02'nin port 80, kartona yazılı Wi-Fi ve iki USB ifadesi gerçek Arminoks bulgusu sayılmaz. Aşağıdaki başlangıç uzak erişim senaryosu V05/V06'dır; gerçek cihazın topolojisi bilinmemektedir.
+Genel föydeki varlıklar süt otomatına uyarlanmıştır. PaketPro'ya ait robot, port 80, Wi-Fi parolası ve USB sayısı otomata aktarılmamıştır. Uzak servis ve yükleme yetkileri V05-V08 ders kabulleridir.
 
 ## Envanter: altı kategori
 
@@ -12,7 +12,7 @@ T01'in şişeleme hattı varlıkları süt otomatına işlevsel olarak uyarlanm�
 | A02 | Donanım: programlanabilir kontrolör | V01; ayrı PLC olduğu doğrulanmaz |
 | A03 | Donanım: karıştırıcı ve dolum pompası | D04; sürücü/valf topolojisi V01 |
 | A04 | Donanım: soğutma ve sıcaklık ölçümü | D02; sensör tipi, hata tanısı V04 |
-| A05 | Donanım: yıkama ve dolum akışı | D07; kimyasal/sıcak akış ve valf düzeni V03/V09 |
+| A05 | Donanım: yıkama ve dolum akışı | D07; çalışma sırası V03/V09; valf düzeni bilinmez |
 | A06 | Donanım: USB girişi | D05; port sayısı/yazma yeteneği bilinmez |
 | A07 | Donanım: bakım bilgisayarı | V05/V08 |
 | A08 | Donanım: uzak bakım ağ geçidi | V05; SMS modülüyle aynı cihaz değildir |
@@ -33,9 +33,9 @@ T01'in şişeleme hattı varlıkları süt otomatına işlevsel olarak uyarlanm�
 | F01 | Veri: sıcaklık, miktar ve alarm | D02/D05; veri yolu V01/V04 |
 | F02 | Veri: satış geçmişi | D05; bütünlük kontrolü H05 |
 | F03 | Veri: konfigürasyon, yazılım paketi ve yedek | V01/V08 |
-| F04 | Veri: yıkama/durulama izni | V09; ölçüm yöntemi bilinmez |
+| F04 | Veri: yıkama tamamlanma bilgisi | V09; ölçüm yöntemi bilinmez |
 
-## Senaryolarda kullanılan altı giriş kapısı
+## Ders senaryosunda kullanılan beş giriş yolu
 
 | Kapı | Envanter bağlantısı | Senaryo kullanımı |
 |---|---|---|
@@ -44,9 +44,8 @@ T01'in şişeleme hattı varlıkları süt otomatına işlevsel olarak uyarlanm�
 | G03 | A06/B02 USB veri aktarımı | R-03; yükleme etkisi varsayımsal |
 | G04 | A07/W03/F03 servis paketi | R-04; tedarik zinciri |
 | G05 | A02/W02 bakım-programlama arayüzü | R-01/R-04 zincirinin iç adımı |
-| G06 | Hedef koruma konfigürasyonu W04 | Yerel yetkili bakım dışında yazma olmamalı |
 
-En az beş kapı koşulu sağlanır (T03 s.43). B03'ün giriş komutu alması kanıtlanmadığından saldırı kapısı olarak kullanılmaz. Bir bağlantının envanterde bulunması istismar edilebilirliğini kanıtlamaz.
+G01-G05 ders modelinin yollarıdır; beşinin de gerçek üründe doğrulandığı söylenmez. Hedef koruma konfigürasyonu W04 yeni bir giriş kapısı olarak sayılmamıştır. SMS bildirimi de komut kanalı kabul edilmez (T03, slayt 43).
 
 ## Görev A
 

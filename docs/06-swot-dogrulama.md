@@ -1,50 +1,32 @@
-# Destek | SWOT, doğrulama ve sunum özeti
+# SWOT ve doğrulama planı
 
-Bu bölüm ek değerlendirmedir; föy sorularının yerine geçmez. Saha hakkında olumlu/olumsuz güvenlik hükmü vermez.
+## SWOT
 
-## SWOT: eğitim modelinin değerlendirmesi
-
-| Boyut | Değerlendirme | Dayanak |
-|---|---|---|
-| Güçlü | Üretici sıcaklık, otomatik yıkama, panel ve USB özelliklerini yayımlamış | D02/D05/D07; analiz için açık başlangıç |
-| Zayıf / bilgi eksikliği | Sürüm, devre, ağ, erişim ve koruma donanımı bilinmiyor | Gerçek kurulum hakkında sonuç sınırı |
-| Fırsat | Satış izni, ürün uygunluğu ve bakım koruması ayrı gereksinimlere bağlanabilir | H01–H07; izlenebilir tasarım |
-| Tehdit / koşullu | Bakım yazması veya program değişikliği koruma koşullarını aşabilir | V05–V08; R-01–R-04 |
-
-## Doğrulama planı: gerçek test yapılmadı
-
-Testler yalnız yetkili ve güvenli test düzeneğinde yapılmalıdır. Gerçek makinede müşteri varken koruma bypass edilmez. Yazılım dosyası kontrolleri bu testlerin yerine geçmez.
-
-| Test | Gereksinim | Deneme | Tamamlanma ölçütü |
-|---|---|---|---|
-| D01 | H01 / SF-01 | Kapak açık, hata bilgisi ve hareket talebi kombinasyonları | Tehlikeli hareket yok; duruş/erişim süresi uzman ölçümüyle uygun |
-| D02 | H02 / SF-02 | Ölçüm kaybı, geçersiz değer, geçmiş uygunsuzluk, sahte normal ekran | Satış kapalı; güvenli soğutma/uyarı sürer; ürün onayı gerekir |
-| D03 | H03 / SF-03 | Enerji dönüşü, reset, haberleşme geri gelişi | Kendiliğinden hareket yok; ayrı yerel başlatma |
-| D04 | H04 / SF-04 | Satış ve yıkama talebinin aynı anda verilmesi; durulama belirsizliği | Ürün ve tehlikeli temizleme yolları birlikte açılmaz |
-| D05 | H05 | Yanlış ürün paketi, bozuk bütünlük, yetkisiz ayar/proje değişikliği | Reddetme, kayıt, güvenilir yedek ve destekli kurtarma kanıtı |
-| D06 | H06 | Yanlış rol, MFA eksikliği, süre bitimi, koruma programlama isteği | Giriş/yazma reddi; süre sonunda erişim kesilir |
-| D07 | H07 | Ağ/panel/servis bağlantısı kaybı | Koruma çalışır; satış izni kendiliğinden gelmez; soğutma güvenli davranır |
-
-## İş planı ve tamamlanma ayrımı
-
-1. Kaynak ve kapsam: LAB1–5 ve üretici özellikleri eşleştirildi.
-2. Analiz: İşlev, giriş, risk ve gereksinimler birbirine bağlandı.
-3. Teslim: Markdown, diyagramlar, PDF ve kontrol verileri üretildi.
-4. Gerçek uygulama: Donanım incelemesi, güvenlik tasarımı, kurulum ve D01–D07 testleri **yapılmadı; eğitim tesliminin dışındadır**.
-
-Nihai eğitim hedefi, eksiksiz ve dürüstçe sınırlandırılmış analizdir. Gerçek makinenin güvenli olduğunun kanıtlanması farklı bir hedef ve yetkili saha çalışması gerektirir.
-
-## Terslikler ve önlemler
-
-| Terslik | Önlem / B planı |
+| Boyut | Değerlendirme |
 |---|---|
-| Ürün broşüründeki farklı makineyi karıştırmak | K01 s.4–6 otomat bölümünü kullan; s.3 tank kapağı işlevini otomata taşıma |
-| SMS'i internet/uzaktan komut sanmak | D06 ile V05'i ayrı tut |
-| Bilinmeyen sürümden gerçek CVE sonucu çıkarmak | VD-01 belirsiz; gerçek SBOM/duyuru olmadan kesin karar yok |
-| Güvenli duruşta soğutmayı gereksiz kesmek | İşlev bazlı güvenli durum; bakım izolasyonu ayrı |
-| Küçük risk skorunda ağır yaralanmayı unutmak | S3 listesi, sorumlu ve kapanış kanıtı |
-| PDF ve Markdown'ın ayrışması | Aynı Markdown'dan tekrar üretim ve dosya kontrolleri |
+| Güçlü | Panel, sıcaklık takibi ve otomatik yıkama gibi özelliklerin üretici broşüründe bulunması |
+| Zayıf / bilgi eksikliği | Kontrolör, sürüm, ağ ve koruma devresinin bilinmemesi |
+| Fırsat | Bakım, satış ve yıkama izinlerinin açık gereksinimlerle ayrılması |
+| Tehdit / koşullu | Ders modelinde servis veya yazılım değişikliğinin koruma koşullarını aşabilmesi |
 
-## Kısa sunum metni
+Bu tablo gerçek makineye yönelik denetim sonucu değildir; açık kaynak analizinin değerlendirmesidir.
 
-Arminoks süt otomatını kamuya açık üretici bilgileriyle inceledim. Önce doğrulanan özellikleri varsayımlardan ayırdım. Ardından bakım hareketi, sıcaklık ve temizlik izinlerini koruma işlevlerine bağladım. Ağ modelinde altı giriş kapısı belirledim; dört farklı profil için fiziksel sonuçla biten risk senaryoları yazdım. E puanını insan maruziyeti olarak değil, yolun dışarıya açıklığı olarak kullandım. Uzak erişimde kimlik, süre ve kayıt kontrollerinin yanında koruma bağımsızlığını tanımladım. LAB5'te gerçek bileşen bilgisi bulunmadığı için temsili CVE üzerinden belirsizliği koruyan yama kararı hazırladım. Bu sonuç gerçek makinede açık bulduğum veya emniyet testi yaptığım anlamına gelmiyor.
+## Önerilen doğrulamalar
+
+Testler gerçek makinede yapılmamıştır. Yetkili bir düzenekte, insanı tehlikeye sokmadan uygulanmaları önerilir. KT kodları testleri, D kodları ise üretici bilgilerini belirtir.
+
+| Test | Gereksinim | Kontrol ve beklenen sonuç |
+|---|---|---|
+| KT01 | H01 / SF-01 | Kapak açık/hatalıyken hareket talebi: tehlikeli hareket engellenir; duruş-erişim süresi doğrulanır |
+| KT02 | H02 / SF-02 | Geçersiz sıcaklık ve ürün durumu: satış kapalı, uyarı ve güvenli soğutma davranışı tanımlı |
+| KT03 | H03 / SF-03 | Reset, enerji ve haberleşme dönüşü: ayrı yerel başlatma olmadan hareket yok |
+| KT04 | H04 / SF-04 | Yıkama sürerken veya tamamlanma belirsizken satış talebi: satış engellenir |
+| KT05 | H05 | Bozuk/yanlış paket veya yetkisiz ayar: reddedilir, kayıt ve kurtarma yolu bulunur |
+| KT06 | H06 | Yanlış rol, eksik MFA veya süre sonu: giriş/yazma reddedilir, geçici erişim kapanır |
+| KT07 | H07 | Ağ/panel kaybı: koruma sürer; satış kendiliğinden açılmaz; soğutma güvenli davranır |
+
+## Analizin değişeceği durumlar
+
+Uzak erişim yoksa R-01'in bu yolu çıkarılır. USB yalnız satış verisi aktarıyorsa R-03'ün program yükleme yolu geçersizleşir. Karıştırıcıya erişim mümkün değilse mekanik senaryolar; gerçek temizlik ve ürün verileri farklıysa biyolojik senaryolar yeniden değerlendirilir.
+
+PLr/SIL, gerçek SBOM, kurulu koruma devresi veya yapılmış yama testi bilgisi bu çalışmada üretilmemiştir. Bunlar için gerekli veri bulunmamaktadır.

@@ -9,6 +9,7 @@ import math
 import os
 import re
 import textwrap
+from sync_sources import generated_files
 
 import fitz
 from reportlab.lib import colors
@@ -189,7 +190,7 @@ def cover(st):
             Paragraph('Batuhan Yaşar Özkan<br/>230541050 · Atama no: 35 · SAMİB<br/>26 Ekim 2026',st['BodyTR']),
             Spacer(1,25), Paragraph('Açık kaynaklı ürün bilgisi, açık varsayımlar ve izlenebilir gereksinimlerle hazırlanmış eğitim analizi.',st['BodyTR']),
             Spacer(1,18), Paragraph('İçerik: Makine profili · Emniyet mimarisi · Zone/conduit · Risk Register · Güvenli uzaktan erişim · Yama kararı · SWOT · Teslim kontrolü',st['BodyTR']),
-            Spacer(1,20), Paragraph('<b>Belge teslimi hazırlanmıştır. Gerçek cihazda uygulama ve emniyet doğrulaması yapılmamıştır.</b>',st['BodyTR']),PageBreak()]
+            Spacer(1,20), Paragraph('<b>Kamuya açık ürün bilgilerine ve belirtilen ders kabullerine dayanır. Gerçek cihazda test yapılmamıştır.</b>',st['BodyTR']),PageBreak()]
 
 
 def build_pdf(target, sources, full=False):
@@ -336,6 +337,8 @@ def diagrams():
 
 def main():
     register_fonts()
+    for name, content in generated_files().items():
+        (ROOT/name).write_text(content,encoding='utf-8',newline='\n')
     (ROOT/'diagrams').mkdir(exist_ok=True)
     (ROOT/'pdf').mkdir(exist_ok=True)
     diagrams()
