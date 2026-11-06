@@ -1,15 +1,8 @@
-# SWOT ve doğrulama planı
+# Önerilen doğrulama planı
 
-## SWOT
+Bu destek belgesinin dosya adındaki 06, LAB6 anlamına gelmez. LAB6 için ayrı olay müdahale belgesi vardır.
 
-| Boyut | Değerlendirme |
-|---|---|
-| Güçlü | Panel, sıcaklık takibi ve otomatik yıkama gibi özelliklerin üretici broşüründe bulunması |
-| Zayıf / bilgi eksikliği | Kontrolör, sürüm, ağ ve koruma devresinin bilinmemesi |
-| Fırsat | Bakım, satış ve yıkama izinlerinin açık gereksinimlerle ayrılması |
-| Tehdit / koşullu | Ders modelinde servis veya yazılım değişikliğinin koruma koşullarını aşabilmesi |
-
-Bu tablo gerçek makineye yönelik denetim sonucu değildir; açık kaynak analizinin değerlendirmesidir.
+SWOT ayrı tutulur: [Güncel SWOT analizi](../raporlar/Arminoks_Sut_Otomati_SWOT_Analizi.pdf).
 
 ## Önerilen doğrulamalar
 

@@ -25,7 +25,7 @@ K01'in PDF s.3'ündeki ayrı dolum makinesi ve soğutma tankı bu otomata ait ka
 
 ## Çalışma modeli
 
-Süt muhafaza edilir, soğutulur ve karıştırılır; satış talebinde dolum yapılır. Dolumdan sonra yıkama sırası çalışır. Analiz; panel, kontrolör, karıştırıcı, pompa, soğutma, yıkama, USB ve bakım yollarını kapsar. Robot, yapay zekâ, SCADA, pastörizasyon veya bulut hizmeti eklenmemiştir.
+Süt muhafaza edilir, soğutulur ve karıştırılır; satış talebinde dolum yapılır. Dolumdan sonra yıkama sırası çalışır. Analiz; panel, kontrolör, karıştırıcı, pompa, soğutma, yıkama, USB ve bakım yollarını kapsar. Ürün envanterine robot, yapay zekâ, SCADA, pastörizasyon veya bulut hizmeti eklenmemiştir. LAB7’deki kamera/YZ zinciri yalnız ayrı bir eğitim senaryosudur.
 
 ## Ders senaryosunda kullanılan kabuller
 
@@ -48,10 +48,14 @@ V05-V08, üreticide bulunmuş zafiyetler değildir. SMS bildirimi internetten pr
 
 | ID | Kaynak | Kullanım |
 |---|---|---|
-| T01 | Öğretmenin `2.1. lab_foyleri_genel.pdf`, 8 PDF sayfası | PDF s.2-6: LAB1-5 soruları |
+| T01 | Öğretmenin `2.1. lab_foyleri_genel.pdf`, 8 PDF sayfası | PDF s.2-8: LAB1-7 soruları |
 | T02 | Öğretmenin `2.2 lab_foyleri_paketpro.pdf`, 8 PDF sayfası | PDF s.2-6: makineye uyarlama örneği |
 | T03 | Öğretmenin `LAB3.pdf`, 40 PDF sayfası | Slayt 23-33: ölçek; slayt 43: görev; slayt 46: tartışma |
 | K01 | [Arminoks süt otomatı broşürü](https://www.arminoks.com/wp-content/uploads/2019/07/ARMINOKS-S%C3%9CT-OTOMATI-BRO%C5%9E%C3%9CR%C3%9C.pdf) | PDF s.4-6: süt otomatı özellikleri |
 | K02 | [NIST SP 800-82 Rev.3](https://csrc.nist.gov/pubs/sp/800/82/r3/final) | OT güvenliği için genel rehber |
 
 T03'ün slayt numaraları 33'ten 42'ye geçer; dosya 40 PDF sayfasıdır. Slayt 43 PDF s.35'e, slayt 46 PDF s.38'e karşılık gelir. Kaynak kontrol tarihi 26.10.2026'dır. PLr/SIL veya standartlara uygunluk seviyesi belirlemek için gerekli saha ve devre bilgileri bulunmadığından bu seviyeler atanmamıştır.
+
+## 06.11.2026 araştırma güncellemesi
+
+Üretici fotoğraflarında LS panel logosu görüldü; eXP20 ailesi yalnız görsel adaydır. Tam model ve kurulu OS/runtime/PLC sürümü doğrulanmadı. XP-Builder ve XP-Remote 3.90.2221; XP-Manager 3.90.241211 üreticinin yayımladığı paket adlarıdır, otomatta kurulu sürümler değildir. Kaynaklar ve koşullu CVE sürüm aralıkları [güncel teknik rapordadır](../raporlar/Arminoks_Siber_Guvenlik_On_Degerlendirme_Raporu.pdf). Belge kodları kendi tabloları içinde yorumlanır.

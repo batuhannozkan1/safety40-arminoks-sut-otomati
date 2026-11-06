@@ -1,33 +1,41 @@
-# Safety 4.0 - Arminoks Süt Otomatı
+# Arminoks Süt Otomatı — Safety 4.0
 
-**Batuhan Yaşar Özkan | 230541050 | Atama no: 35 | 26 Ekim 2026**
+**Batuhan Yaşar Özkan · 230541050 · Atama 35 · SAMİB**
 
-Arminoks Makina İmalatı ve Pazarlama San. Tic. Ltd. Şti. süt otomatı için hazırlanmış LAB 1-5 çalışmasıdır. Atama listesindeki kuruluş grubu SAMİB'dir.
+Arminoks süt otomatının kamuya açık bilgilerle yapılan güvenlik incelemesi ve laboratuvar çalışmaları.
 
-## Kapsam ve yöntem
+## Önce bu üç dosyayı inceleyin
 
-Üreticinin açık broşüründeki bilgiler kullanılmıştır. Firmayla iletişim kurulmamış ve makine üzerinde test yapılmamıştır. Kontrol sistemi hakkında bilinmeyen ayrıntılar, ders sorularını yanıtlamak için açıkça varsayım olarak belirtilmiştir.
+| Dosya | İçerik |
+|---|---|
+| **[Yazılım, sürüm ve CVE envanteri — Excel](raporlar/Arminoks_Yazilim_Surum_CVE_Envanteri.xlsx)** | Yazılım referansları, kurulu sürüm durumu, etkilenen sürüm koşulları ve kanıt belgeleri |
+| **[Teknik değerlendirme raporu — PDF](raporlar/Arminoks_Siber_Guvenlik_On_Degerlendirme_Raporu.pdf)** | Kanıtların sınırı, sürüm okuma adımları ve koşullu CVE adayları |
+| **[SWOT analizi — ayrı PDF](raporlar/Arminoks_Sut_Otomati_SWOT_Analizi.pdf)** | Güçlü yönler, bilgi eksikleri, fırsatlar ve koşullu tehditler |
 
-**D:** üretici kaynağında belirtilen özellik. **V:** eğitim senaryosu için kabul. **H:** önerilen koruma gereksinimi. Bu analiz, gerçek makinede açık bulunduğu veya emniyet doğrulandığı anlamına gelmez.
+**Mevcut sonuç:** Otomatta kurulu yazılım sürümleri doğrulanamadı. Doğrulanmış cihaz zafiyeti yok; ilgili olabilecek CVE kayıtları koşullu adaydır. Gerçek cihaz testi yapılmadı. Üreticinin yayımladığı paket sürümü, otomatta kurulu sürüm değildir.
 
-## Bölümler
+## Laboratuvarlar
 
-| Bölüm | İçerik | Çıktı |
+| Ödev | Çalışma | Durum |
 |---|---|---|
-| [Makine profili](docs/00-makine-profili.md) | Ürün bilgileri, kaynaklar ve varsayımlar | Sistem sınırı |
-| [LAB 1](docs/lab1-safety-architecture.md) | 8 föy sorusu ve 4 ek soru | Safety Function Map |
-| [LAB 2](docs/lab2-zone-conduit.md) | Envanter, bölgeler, geçişler ve 6 erişim kararı | Zone / Conduit Diagram |
-| [LAB 3](docs/lab3-risk-register.md) | 4 senaryo, puanlar, önlemler ve tartışma soruları | Risk Register |
-| [LAB 4](docs/lab4-secure-remote-access.md) | Başlangıç/hedef mimari ve bağımsızlık gereksinimleri | Secure Architecture |
-| [LAB 5](docs/lab5-vulnerability-decision.md) | 5 föy sorusu, bileşen inceleme ve yama kararı | Vulnerability Decision |
-| [SWOT ve doğrulama planı](docs/06-swot-dogrulama.md) | Değerlendirme ve önerilen testler | Destekleyici çalışma |
-| [Teslim kontrolü](docs/07-teslim-kontrolu.md) | Soru ve yanıt eşleştirmesi | Kapsam listesi |
+| LAB1 | [Safety Architecture](docs/lab1-safety-architecture.md) | Eğitim analizi |
+| LAB2 | [Zone / Conduit](docs/lab2-zone-conduit.md) | Eğitim analizi |
+| LAB3 | [Risk Register](docs/lab3-risk-register.md) | Gerekçeli eğitim senaryoları |
+| LAB4 | [Secure Remote Access](docs/lab4-secure-remote-access.md) | Varsayımlar ve hedef gereksinimler |
+| LAB5 | [SBOM / CVE / Patch](docs/lab5-vulnerability-decision.md) | Föy yanıtları; gerçek CVE adayları yukarıdaki raporlarda |
+| LAB6 | [Incident Workflow](docs/lab6-incident-workflow.md) · [PDF](pdf/LAB6_Incident_Workflow.pdf) | Özgün föyün 5 görevi süt otomatına uyarlandı |
+| LAB7 | [AI Fail-Safe Decision](docs/lab7-ai-fail-safe.md) · [PDF](pdf/LAB7_AI_Fail_Safe.pdf) | Özgün föyün 3 görevi ve karar tablosu uyarlandı |
+| LAB8 | Özgün yönerge bekleniyor | Genel föyde LAB8 yok; içerik tahmin edilmedi |
 
-**[Birleşik PDF raporu](pdf/Arminoks_Sut_Otomati_LAB1-5_Rapor.pdf)** ve bölüm PDF'leri `pdf/` klasöründedir. Risk kayıtları [JSON](data/risk_register.json) ve [CSV](data/risk_register.csv) biçiminde de bulunur. Her laboratuvarda 4, toplam 20 ek soru yanıtlanmıştır. LAB 6-7 kapsam dışındadır.
+LAB6'daki olay ve LAB7'deki kamera/YZ işlevi eğitim senaryosudur. Gerçek olay, kurulu YZ sistemi veya doğrulanmış kontrol olarak sunulmaz. CRA'nın zafiyet ve ciddi olay bildirim süreleri LAB6'da ayrı açıklanmıştır.
 
-## Dosyaları yeniden üretme
+## Kaynak ve doğrulama
 
-Hazır PDF'leri okumak için kurulum gerekmez. Kaynaklardan yeniden üretmek için Python 3.10+ kullanılır:
+[Makine profili](docs/00-makine-profili.md) · [Teslim kapsamı](docs/07-teslim-kontrolu.md) · [Önerilen doğrulamalar](docs/06-swot-dogrulama.md)
+
+Özgün genel föyün PDF s.7'si LAB6, s.8'i LAB7 içindir. Öğretmenin dosyaları ve üretici görselleri yeniden dağıtılmaz. Firma ile iletişim, aktif tarama ve saha testi yapılmamıştır. Ürün bilgisi ile eğitim kabulleri ayrı tutulur.
+
+Hazır dosyaları okumak için kurulum gerekmez. Laboratuvar PDF'lerini kaynaklardan üretmek ve belge kontrollerini çalıştırmak için:
 
 ```bash
 python -m pip install -r requirements.txt
@@ -35,10 +43,4 @@ python scripts/build_report.py
 python scripts/verify_delivery.py
 ```
 
-PDF üretimi için DejaVu Sans gerekir. Linux'ta sistem yazı tipleri kullanılır. Diğer sistemlerde `DejaVuSans.ttf` ve `DejaVuSans-Bold.ttf` dosyalarını `fonts/` klasörüne koyun veya `ARMINOKS_FONT_DIR` ile konumunu belirtin.
-
-Üretim aracı raporu, risk tablolarını ve soru listesini aynı Markdown kaynaklarından günceller. Kontrol aracı kapsamı, bağlantıları, puanları, veri tutarlılığını ve PDF metin sınırlarını denetler. Sonuç [kontrol kaydındadır](data/verification.json). Bunlar belge kontrolleridir; gerçek cihaz testi değildir.
-
-## Kaynaklar
-
-Ana görev kaynağı öğretmenin genel föyü; uyarlama örneği PaketPro föyü; risk ölçeği kaynağı LAB3 ders notudur. Üretici ve teknik rehber bağlantıları [makine profilinde](docs/00-makine-profili.md) verilmiştir. Öğretmenin orijinal PDF'leri ve üretici görselleri repoda yeniden dağıtılmaz.
+PDF üretimi DejaVu Sans gerektirir; sistemde yoksa ARMINOKS_FONT_DIR ile konumu belirtilir. Bu komutlar laboratuvar kaynaklarını ve yardımcı verileri işler. `raporlar/` altındaki üç araştırma dosyası ayrı hazırlanmış teslimlerdir; bu komutlarla üzerine yazılmaz. Kontroller belge bütünlüğünü gösterir, makine emniyetini veya öğretmenin kabulünü kanıtlamaz.
