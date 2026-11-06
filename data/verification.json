@@ -1,6 +1,6 @@
 {
-  "passed": 156,
-  "total": 156,
+  "passed": 190,
+  "total": 190,
   "failed": [],
   "limits": "Dosya/aritmetik kontrolüdür; gerçek cihaz veya emniyet doğrulaması değildir.",
   "checks": [
@@ -16,6 +16,26 @@
     },
     {
       "check": "no_windows_metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "main_report:Arminoks_Yazilim_Surum_CVE_Envanteri.xlsx",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "main_report:Arminoks_Siber_Guvenlik_On_Degerlendirme_Raporu.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "main_report:Arminoks_Sut_Otomati_SWOT_Analizi.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "main_reports_featured",
       "passed": true,
       "detail": ""
     },
@@ -196,6 +216,46 @@
     },
     {
       "check": "question:L5-Q5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L6-Q1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L6-Q2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L6-Q3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L6-Q4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L6-Q5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L7-Q1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L7-Q2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "question:L7-Q3",
       "passed": true,
       "detail": ""
     },
@@ -450,7 +510,17 @@
       "detail": ""
     },
     {
-      "check": "link:README.md:docs/00-makine-profili.md",
+      "check": "link:README.md:raporlar/Arminoks_Yazilim_Surum_CVE_Envanteri.xlsx",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:README.md:raporlar/Arminoks_Siber_Guvenlik_On_Degerlendirme_Raporu.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:README.md:raporlar/Arminoks_Sut_Otomati_SWOT_Analizi.pdf",
       "passed": true,
       "detail": ""
     },
@@ -480,32 +550,22 @@
       "detail": ""
     },
     {
-      "check": "link:README.md:docs/06-swot-dogrulama.md",
+      "check": "link:README.md:docs/lab6-incident-workflow.md",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "link:README.md:docs/07-teslim-kontrolu.md",
+      "check": "link:README.md:pdf/LAB6_Incident_Workflow.pdf",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "link:README.md:pdf/Arminoks_Sut_Otomati_LAB1-5_Rapor.pdf",
+      "check": "link:README.md:docs/lab7-ai-fail-safe.md",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "link:README.md:data/risk_register.json",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:README.md:data/risk_register.csv",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:README.md:data/verification.json",
+      "check": "link:README.md:pdf/LAB7_AI_Fail_Safe.pdf",
       "passed": true,
       "detail": ""
     },
@@ -515,12 +575,37 @@
       "detail": ""
     },
     {
+      "check": "link:README.md:docs/07-teslim-kontrolu.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:README.md:docs/06-swot-dogrulama.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "link:docs/lab5-vulnerability-decision.md:../diagrams/lab5-karar.png",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "link:docs/lab3-risk-register.md:../diagrams/lab3-matris.png",
+      "check": "link:docs/lab5-vulnerability-decision.md:../raporlar/Arminoks_Yazilim_Surum_CVE_Envanteri.xlsx",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/lab5-vulnerability-decision.md:../raporlar/Arminoks_Siber_Guvenlik_On_Degerlendirme_Raporu.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/lab1-safety-architecture.md:../diagrams/lab1-mimari.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/lab4-secure-remote-access.md:../diagrams/lab4-erisim.png",
       "passed": true,
       "detail": ""
     },
@@ -555,17 +640,52 @@
       "detail": ""
     },
     {
+      "check": "link:docs/07-teslim-kontrolu.md:lab6-incident-workflow.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:lab7-ai-fail-safe.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:../raporlar/Arminoks_Yazilim_Surum_CVE_Envanteri.xlsx",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:../raporlar/Arminoks_Siber_Guvenlik_On_Degerlendirme_Raporu.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/07-teslim-kontrolu.md:../raporlar/Arminoks_Sut_Otomati_SWOT_Analizi.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/06-swot-dogrulama.md:../raporlar/Arminoks_Sut_Otomati_SWOT_Analizi.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/lab3-risk-register.md:../diagrams/lab3-matris.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/00-makine-profili.md:../raporlar/Arminoks_Siber_Guvenlik_On_Degerlendirme_Raporu.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "link:docs/lab7-ai-fail-safe.md:../raporlar/Arminoks_Siber_Guvenlik_On_Degerlendirme_Raporu.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "link:docs/lab2-zone-conduit.md:../diagrams/lab2-zonlar.png",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/lab1-safety-architecture.md:../diagrams/lab1-mimari.png",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "link:docs/lab4-secure-remote-access.md:../diagrams/lab4-erisim.png",
       "passed": true,
       "detail": ""
     },
@@ -610,9 +730,19 @@
       "detail": ""
     },
     {
+      "check": "source_hash:docs/lab6-incident-workflow.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source_hash:docs/lab7-ai-fail-safe.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "pdf_count",
       "passed": true,
-      "detail": "9"
+      "detail": "11"
     },
     {
       "check": "pdf_text:00_Makine_Profili.pdf",
@@ -781,6 +911,46 @@
     },
     {
       "check": "pdf_glyphs:LAB5_Vulnerability_Decision.pdf",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "pdf_text:LAB6_Incident_Workflow.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pdf_questions:LAB6_Incident_Workflow.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pdf_bounds:LAB6_Incident_Workflow.pdf",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "pdf_glyphs:LAB6_Incident_Workflow.pdf",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "pdf_text:LAB7_AI_Fail_Safe.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pdf_questions:LAB7_AI_Fail_Safe.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pdf_bounds:LAB7_AI_Fail_Safe.pdf",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "pdf_glyphs:LAB7_AI_Fail_Safe.pdf",
       "passed": true,
       "detail": "[]"
     }

@@ -1,10 +1,12 @@
 {
-  "docs/00-makine-profili.md": "bcfb5d43329fa573a1751a759a11e89944ee2deaef08ed46dd10c0d3e162c0d6",
-  "docs/06-swot-dogrulama.md": "0962565335d62128bfeea14f6046cf53b76b3d53ccb3425fcd701b32ac587a47",
-  "docs/07-teslim-kontrolu.md": "88c32d987bb9dfd73a57f8abf4ea360fc7ca226ea8b19358c39cae371bb54aff",
+  "docs/00-makine-profili.md": "7b237c9724bf3b6f14ba21510aab877ab8bf7b34b448d8194a7521d82e3a985a",
+  "docs/06-swot-dogrulama.md": "b167fdad6de1dca832c868adb722c067322578f7f7f781ae0f2311dd6220304e",
+  "docs/07-teslim-kontrolu.md": "26700e28b97a24c6817fb05a433ccce6b5a4805b50f333b4539555506510e731",
   "docs/lab1-safety-architecture.md": "0ac67910e5b0ee90f0b977bb98450c2ebd32ba95e28d542ce04dbb7eaab58242",
   "docs/lab2-zone-conduit.md": "28840b64b936a287c070a8842515e37fc70f570e5d91247802354841cda84e43",
   "docs/lab3-risk-register.md": "aed0644ac31b869484049e7223f77a6c2fdcaf76be6fc418e66e17503d87f3c1",
   "docs/lab4-secure-remote-access.md": "1723a953904866cd781a749cbbaa11bd348a42b3d8620159e24cc3da4ce5767b",
-  "docs/lab5-vulnerability-decision.md": "e821aaffd3b1c82661f834e55b66f65cb881ba385717522c642277aea09288c8"
+  "docs/lab5-vulnerability-decision.md": "10a395dff17e7c68cd576cf4bb88fb932300cb0d8e5fdf0d98ae7b70ee280e59",
+  "docs/lab6-incident-workflow.md": "4a5c08e693cb5df4c30b12e13d3d7dee490945bc3925062a462b6cd0aedf3afb",
+  "docs/lab7-ai-fail-safe.md": "47106122533ff8931d69c32f719ca8493f341c85d05faa8459213a1992f80c12"
 }

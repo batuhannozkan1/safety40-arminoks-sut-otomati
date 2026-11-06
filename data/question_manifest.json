@@ -32,7 +32,15 @@
     "L5-Q2",
     "L5-Q3",
     "L5-Q4",
-    "L5-Q5"
+    "L5-Q5",
+    "L6-Q1",
+    "L6-Q2",
+    "L6-Q3",
+    "L6-Q4",
+    "L6-Q5",
+    "L7-Q1",
+    "L7-Q2",
+    "L7-Q3"
   ],
   "extra_questions": [
     "L1-E1",
@@ -274,10 +282,43 @@
     "L5-E4": {
       "file": "docs/lab5-vulnerability-decision.md",
       "question": "Kapanış için hangi somut sonuç gerekir?"
+    },
+    "L6-Q1": {
+      "file": "docs/lab6-incident-workflow.md",
+      "question": "10:15 — ilk 15 dakika: Kimi ararsınız? İlk üç eyleminiz?"
+    },
+    "L6-Q2": {
+      "file": "docs/lab6-incident-workflow.md",
+      "question": "İlk iki saat: Emniyet güvende mi? Hangi kanıt korunur, hangi hesap kapatılır?"
+    },
+    "L6-Q3": {
+      "file": "docs/lab6-incident-workflow.md",
+      "question": "24 saat — erken uyarı için hangi bilgi hazır olmalı?"
+    },
+    "L6-Q4": {
+      "file": "docs/lab6-incident-workflow.md",
+      "question": "72 saat — kök neden, etki ve önlemler: Kim ne yapıyor?"
+    },
+    "L6-Q5": {
+      "file": "docs/lab6-incident-workflow.md",
+      "question": "14 gün — son rapor için hangi kayıtlar korunmuş olmalı?"
+    },
+    "L7-Q1": {
+      "file": "docs/lab7-ai-fail-safe.md",
+      "question": "Model yanlış sınıflandırdı ve uygunsuz kaba OK verdi. Sistem ne yapmalı?"
+    },
+    "L7-Q2": {
+      "file": "docs/lab7-ai-fail-safe.md",
+      "question": "Kamera girdisi bozuk veya sahte. Nasıl fark edilir, ne yapılır?"
+    },
+    "L7-Q3": {
+      "file": "docs/lab7-ai-fail-safe.md",
+      "question": "Modelin confidence değeri düştü. Eşik ne olmalı, altında ne yapılır?"
     }
   },
   "notes": [
     "L2-P1 uyarlama sorusu; L3-T1-T5 ders tartışmasıdır.",
-    "LAB6-7 kapsam dışıdır."
+    "LAB6: genel föy PDF s.7, 5 görev. LAB7: PDF s.8, 3 görev ve karar tablosu.",
+    "LAB8 yönergesi bulunmadı; kapsam veya yanıt uydurulmadı."
   ]
 }
