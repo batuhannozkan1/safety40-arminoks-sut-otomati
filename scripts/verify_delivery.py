@@ -19,6 +19,12 @@ def main():
     check('expected_question_set',set(manifest['questions'])==set(BASE_IDS+EXTRA_IDS))
     check('no_upload_guide',not (ROOT/'GITHUB-YUKLEME.md').exists() and 'GITHUB-YUKLEME' not in (ROOT/'README.md').read_text())
     check('no_windows_metadata',not any(p.name.endswith(':Zone.Identifier') for p in ROOT.rglob('*')))
+    reports=json.loads((ROOT/'data/report_manifest.json').read_text())
+    for name,digest in reports.items():
+        p=ROOT/'raporlar'/name
+        check('main_report:'+name,p.exists() and hashlib.sha256(p.read_bytes()).hexdigest()==digest)
+    readme=(ROOT/'README.md').read_text()
+    check('main_reports_featured',all('raporlar/'+name in readme.split('## Laboratuvarlar')[0] for name in reports))
     for name,expected in generated_files().items():
         check('generated_data:'+name,(ROOT/name).read_text(encoding='utf-8')==expected)
     for q in manifest['mandatory_and_course_discussion']+manifest['extra_questions']:
@@ -53,17 +59,17 @@ def main():
     for path,digest in hashes.items():
         check('source_hash:'+path,hashlib.sha256((ROOT/path).read_bytes().replace(b'\r\n',b'\n')).hexdigest()==digest)
     pdfs=sorted((ROOT/'pdf').glob('*.pdf'))
-    check('pdf_count',len(pdfs)==9,str(len(pdfs)))
+    check('pdf_count',len(pdfs)==11,str(len(pdfs)))
     for p in pdfs:
         doc=fitz.open(p)
         check('pdf_text:'+p.name,all(len(page.get_text().strip())>70 for page in doc))
         content=' '.join(page.get_text() for page in doc)
-        match=re.match(r'LAB([1-5])_',p.name)
+        match=re.match(r'LAB([1-7])_',p.name)
         if match:
             prefix='L'+match[1]+'-'
             check('pdf_questions:'+p.name,all(q in content for q in BASE_IDS+EXTRA_IDS if q.startswith(prefix)))
         if p.name=='Arminoks_Sut_Otomati_LAB1-5_Rapor.pdf':
-            check('pdf_all_questions',all(q in content for q in BASE_IDS+EXTRA_IDS))
+            check('pdf_all_questions',all(q in content for q in BASE_IDS+EXTRA_IDS if not q.startswith(('L6-','L7-'))))
             check('pdf_bookmarks',len(doc.get_toc())==8)
         outside=[]
         replacement=[]

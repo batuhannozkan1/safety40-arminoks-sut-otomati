@@ -11,7 +11,8 @@ ROOT=Path(__file__).resolve().parents[1]
 BASE_IDS=([f'L1-Q{i}' for i in range(1,9)]+[f'L2-A{i}' for i in range(1,4)]+
           [f'L2-B{i}' for i in range(1,7)]+['L2-P1','L3-Q1','L3-Q2']+
           [f'L3-T{i}' for i in range(1,6)]+['L4-A','L4-B1','L4-B2']+
-          [f'L5-Q{i}' for i in range(1,6)])
+          [f'L5-Q{i}' for i in range(1,6)]+[f'L6-Q{i}' for i in range(1,6)]+
+          [f'L7-Q{i}' for i in range(1,4)])
 EXTRA_IDS=[f'L{lab}-E{i}' for lab in range(1,6) for i in range(1,5)]
 
 
@@ -33,7 +34,9 @@ def generated_files():
     if missing:
         raise ValueError('Eksik sorular: '+', '.join(sorted(missing)))
     manifest={'mandatory_and_course_discussion':BASE_IDS,'extra_questions':EXTRA_IDS,'questions':questions,
-              'notes':['L2-P1 uyarlama sorusu; L3-T1-T5 ders tartışmasıdır.','LAB6-7 kapsam dışıdır.']}
+              'notes':['L2-P1 uyarlama sorusu; L3-T1-T5 ders tartışmasıdır.',
+                       'LAB6: genel föy PDF s.7, 5 görev. LAB7: PDF s.8, 3 görev ve karar tablosu.',
+                       'LAB8 yönergesi bulunmadı; kapsam veya yanıt uydurulmadı.']}
     text=(ROOT/'docs/lab3-risk-register.md').read_text(encoding='utf-8')
     scores={}
     management={}

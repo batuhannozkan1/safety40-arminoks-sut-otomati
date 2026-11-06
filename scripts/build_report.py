@@ -25,10 +25,10 @@ from reportlab.platypus import (
 from reportlab.pdfgen import canvas
 
 ROOT = Path(__file__).resolve().parents[1]
-NAVY = colors.HexColor('#132C46')
-TEAL = colors.HexColor('#007F86')
-RED = colors.HexColor('#A83F4B')
-LIGHT = colors.HexColor('#EAF3F5')
+NAVY = colors.black
+TEAL = colors.black
+RED = colors.HexColor('#333333')
+LIGHT = colors.white
 GREY = colors.HexColor('#4B5C6D')
 DOCS = [
     ('00-makine-profili.md', '00_Makine_Profili.pdf'),
@@ -39,6 +39,8 @@ DOCS = [
     ('lab5-vulnerability-decision.md', 'LAB5_Vulnerability_Decision.pdf'),
     ('06-swot-dogrulama.md', '06_SWOT_Dogrulama.pdf'),
     ('07-teslim-kontrolu.md', '07_Teslim_Kontrolu.pdf'),
+    ('lab6-incident-workflow.md', 'LAB6_Incident_Workflow.pdf'),
+    ('lab7-ai-fail-safe.md', 'LAB7_AI_Fail_Safe.pdf'),
 ]
 
 
@@ -66,20 +68,20 @@ def inline(s):
     def link(m):
         label, url = m.groups()
         if url.startswith('https://'):
-            return '<link href="' + url + '" color="#007F86">' + label + '</link>'
+            return '<link href="' + url + '" color="#000000">' + label + '</link>'
         return label
     return re.sub(r'\[([^\]]+)\]\(([^)]+)\)', link, s)
 
 
 def styles():
     s = getSampleStyleSheet()
-    s.add(ParagraphStyle(name='BodyTR', fontName='Body', fontSize=9.1, leading=14.2,
+    s.add(ParagraphStyle(name='BodyTR', fontName='Body', fontSize=11, leading=15,
                          textColor=NAVY, spaceAfter=7, splitLongWords=True))
-    s.add(ParagraphStyle(name='CellTR', fontName='Body', fontSize=7.5, leading=11,
+    s.add(ParagraphStyle(name='CellTR', fontName='Body', fontSize=9.5, leading=13,
                          textColor=NAVY, splitLongWords=True))
-    s.add(ParagraphStyle(name='HeadCellTR', parent=s['CellTR'], fontName='Body-Bold', textColor=colors.white))
+    s.add(ParagraphStyle(name='HeadCellTR', parent=s['CellTR'], fontName='Body-Bold', textColor=colors.black))
     for name, size, leading, before, after in [
-        ('H1TR', 21, 27, 8, 17), ('H2TR', 13, 18, 14, 8), ('H3TR', 10.2, 15, 11, 6),
+        ('H1TR', 15, 21, 8, 14), ('H2TR', 12, 17, 12, 8), ('H3TR', 11, 15, 11, 6),
     ]:
         s.add(ParagraphStyle(name=name, fontName='Body-Bold', fontSize=size, leading=leading,
                              textColor=TEAL if name != 'H1TR' else NAVY,
@@ -109,7 +111,7 @@ def table(rows, st):
              for cell in r] for n, r in enumerate(clean)]
     t = Table(data, colWidths=widths, repeatRows=1, hAlign='LEFT')
     t.setStyle(TableStyle([
-        ('BACKGROUND', (0,0), (-1,0), NAVY),
+        ('BACKGROUND', (0,0), (-1,0), colors.white),
         ('ROWBACKGROUNDS', (0,1), (-1,-1), [colors.white, LIGHT]),
         ('VALIGN', (0,0), (-1,-1), 'TOP'),
         ('LEFTPADDING', (0,0), (-1,-1), 7),
@@ -189,7 +191,7 @@ def cover(st):
             Paragraph('LAB 1–5 · Machine Starter Pack',st['H2TR']), Spacer(1,25),
             Paragraph('Batuhan Yaşar Özkan<br/>230541050 · Atama no: 35 · SAMİB<br/>26 Ekim 2026',st['BodyTR']),
             Spacer(1,25), Paragraph('Açık kaynaklı ürün bilgisi, açık varsayımlar ve izlenebilir gereksinimlerle hazırlanmış eğitim analizi.',st['BodyTR']),
-            Spacer(1,18), Paragraph('İçerik: Makine profili · Emniyet mimarisi · Zone/conduit · Risk Register · Güvenli uzaktan erişim · Yama kararı · SWOT · Teslim kontrolü',st['BodyTR']),
+            Spacer(1,18), Paragraph('İçerik: Makine profili · Emniyet mimarisi · Zone/conduit · Risk Register · Güvenli uzaktan erişim · Yama kararı · Doğrulama planı · Teslim kontrolü. Güncel SWOT ayrı belgededir.',st['BodyTR']),
             Spacer(1,20), Paragraph('<b>Kamuya açık ürün bilgilerine ve belirtilen ders kabullerine dayanır. Gerçek cihazda test yapılmamıştır.</b>',st['BodyTR']),PageBreak()]
 
 
@@ -202,7 +204,7 @@ def build_pdf(target, sources, full=False):
         story.extend(parse_markdown(source,st))
     doc = SimpleDocTemplate(str(target), pagesize=A4, rightMargin=46,leftMargin=46,
                              topMargin=53,bottomMargin=56,
-                             title='Arminoks Süt Otomatı | Safety 4.0 LAB1–5',
+                             title=('Arminoks Süt Otomatı | Safety 4.0 LAB1–5' if full else sources[0].read_text(encoding='utf-8').splitlines()[0].lstrip('# ')),
                              author='Batuhan Yaşar Özkan')
     doc.build(story,onFirstPage=page_frame,onLaterPages=page_frame)
     if full:
@@ -345,7 +347,7 @@ def main():
     for source,target in DOCS:
         build_pdf(ROOT/'pdf'/target,[ROOT/'docs'/source])
     build_pdf(ROOT/'pdf'/'Arminoks_Sut_Otomati_LAB1-5_Rapor.pdf',
-              [ROOT/'docs'/source for source,_ in DOCS],True)
+              [ROOT/'docs'/source for source,_ in DOCS[:8]],True)
     hashes={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest()
             for p in sorted((ROOT/'docs').glob('*.md'))}
     (ROOT/'data'/'source_hashes.json').write_text(json.dumps(hashes,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
