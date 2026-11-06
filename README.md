@@ -14,7 +14,9 @@ Safety 4.0 Readiness Bootcamp laboratuvar föylerinin **Arminoks süt otomatına
 | **[Siber güvenlik ön değerlendirme raporu — PDF](raporlar/Arminoks_Siber_Guvenlik_On_Degerlendirme_Raporu.pdf)** | Kanıtların sınırı, sürüm okuma adımları, koşullu CVE adayları |
 | **[SWOT analizi — PDF](raporlar/Arminoks_Sut_Otomati_SWOT_Analizi.pdf)** | Güçlü yönler, bilgi eksikleri, fırsatlar, koşullu tehditler |
 
-**Sonuç:** Otomatta kurulu yazılım sürümleri doğrulanamadı. Doğrulanmış cihaz zafiyeti yok; ilgili olabilecek CVE kayıtları koşullu adaydır. Gerçek cihaz testi yapılmadı.
+CVE eşleştirmesi **iki bağımsız kaynaktan** doğrulandı: birincil olarak CVE Program (cvelistV5) CNA kaydı, ikincil çapraz-doğrulama olarak OpenCVE Bilgi Tabanı (opencve-kb; CNA + NVD + EUVD + EPSS katmanları). Çeliştiğinde CNA esas alınır.
+
+**Sonuç:** Otomatta kurulu yazılım sürümleri doğrulanamadı; doğrulanmış cihaz zafiyeti yok. Geçerli koşullu aday havuzu 9 CVE'dir: 7 LS Electric XBC-DN32U kaydı (ICSA-23-040-02), 1 XG5000/PLC kaydı (CVE-2022-2758) ve 1 Windows CE kaydı (CVE-2018-0842). LS Electric GMWin 4 kayıtları (CVE-2025-49848/49849/49850) ayrı ürün hattı olduğu için gerekçeyle elendi. Gerçek cihaz testi yapılmadı.
 
 ## Makine
 
